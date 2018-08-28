@@ -7,6 +7,9 @@ filter_list([1,'a','b',0,15]) == [1,0,15]
 filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 """
 def filter_list(l):
-     new_l = list(filter(lambda x: type(x) is int, l))
-     return new_l
+    new_l = list(filter(lambda x: type(x) is int, l))
+    return new_l
 
+if __name__ == "__main__":
+    fil_list = input("Input a list")
+    filter_list(fil_list)
